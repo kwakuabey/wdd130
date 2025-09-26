@@ -7,7 +7,6 @@
   --body-font: "Arial", "Helvetica", sans-serif;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -38,9 +37,6 @@ nav, p, section, article {
   text-decoration: none;
 }
 
-
-
-
 .hero {
   position: relative;
 }
@@ -62,9 +58,8 @@ nav, p, section, article {
     color: #fff; /* white text - make sure there is enough contrast with the background-color */
 }
 
-
 .hero article img {
   float: right;
-  width: 125px;
+  width: 70px;
 }
 

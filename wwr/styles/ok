@@ -1,4 +1,4 @@
-/* ---------- CSS Variables ---------- */
+/* ---------- CSS Variables (color scheme & fonts) ---------- */
 :root {
   --primary-color: #055a05;        /* forest green */
   --secondary-color: #f4a261;      /* warm sand */
@@ -24,7 +24,7 @@ body {
 
 header, main, footer {
   width: 840px;
-  margin: 0 auto; /* center */
+  margin: 0 auto; /* center the content */
 }
 
 h1, h2 {
@@ -37,50 +37,45 @@ nav, p, section, article {
   padding: 8px;
 }
 
-/* ---------- Header: Logo + links stacked ---------- */
+/* Remove underline from social media image links */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* ---------- Header ---------- */
 header {
-  display: block;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header img {
   max-height: 150px;
-  display: block;
-  margin-bottom: 4px; /* tighter */
 }
 
+/* Style nav links inside header */
 header nav ul {
   list-style: none;
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-header nav li {
-  margin: 4px 0; /* tight spacing between links */
+  display: flex;
+  gap: 16px;
 }
 
 header nav a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
-  display: inline-block;
-}
-
-/* Remove underline from social media image links */
-.socialmedia a {
-  text-decoration: none;
 }
 
 /* ---------- HERO SECTION ---------- */
 .hero {
-  position: relative;
+  position: relative; /* so we can absolutely position h1 & article */
 }
 
+/* Make hero image fill container width */
 .hero img {
   display: block;
-  width: 100%;    /* full width */
-  height: auto;   /* keep aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
 /* Heading overlay bar */
@@ -97,37 +92,24 @@ header nav a {
   margin: 0;
 }
 
-/* Article overlay box – slimmer and lower */
+/* Article overlay box at bottom-left of image */
 .hero article {
   position: absolute;
-  bottom: 5%; /* lower down */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%; /* narrower box */
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px 14px;
+  bottom: 20px;
+  left: 20px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  padding: 16px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
 }
 
-/* Put text first, smaller image on right */
+/* Small photo inside article */
 .hero article img {
-  order: 2; /* image right */
-  width: 110px; /* reduced size */
-  height: auto;
+  float: right; /* moves image to right inside box */
+  width: 125px;
+  margin-left: 12px;
   border-radius: 6px;
-  margin: 0;
-}
-
-.hero article p {
-  order: 1;
-  margin: 0;
-  color: var(--accent1-color);
-  font-size: 0.9rem;
-  line-height: 1.4;
 }
 
 /* ---------- Sections ---------- */
@@ -136,9 +118,7 @@ section h2 {
   color: #fff;
   text-align: center;
   padding: 8px;
-  margin: 16px auto;
-  width: fit-content;  /* just wrap heading */
-  border-radius: 6px;
+  margin-top: 16px;
 }
 
 /* ---------- Footer ---------- */
@@ -160,6 +140,6 @@ footer nav.socialmedia {
 }
 
 footer nav.socialmedia img {
-  width: 60px;
-  height: 60px;
+  width: 32px;
+  height: 32px;
 }

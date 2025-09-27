@@ -33,7 +33,6 @@ nav, p, section, article {
   padding: 8px;
 }
 
-/* Remove underline from social media image links */
 .socialmedia a {
   text-decoration: none;
 }
@@ -43,27 +42,24 @@ header img {
   max-height: 150px;
 }
 
-
-
-/* ---------- HERO SECTION ---------- */
 .hero {
-  position: relative; /* so we can absolutely position h1 & article */
+  position: relative; 
 }
 
-/* Make hero image fill container width */
+
 .hero img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* Heading overlay bar */
+
 .hero h1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(38, 70, 83, 0.85); /* semi-transparent dark */
+  background-color: rgba(38, 70, 83, 0.85); 
   color: #fff;
   font-size: 2rem;
   text-align: center;
@@ -71,27 +67,26 @@ header img {
   margin: 0;
 }
 
-/* Article overlay box at bottom-left of image */
+
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 100px;
   width: 70%;
-  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 16px;
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
-/* Small photo inside article */
 .hero article img {
-  float: right; /* moves image to right inside box */
+  float: right; 
   width: 60px;
   margin-left: 12px;
   border-radius: 6px;
 }
 
-/* ---------- Sections ---------- */
+
 section h2 {
   background-color: var(--accent1-color);
   color: #fff;
@@ -100,7 +95,7 @@ section h2 {
   margin-top: 16px;
 }
 
-/* ---------- Footer ---------- */
+
 footer {
   text-align: left;
   margin-top: 10px;

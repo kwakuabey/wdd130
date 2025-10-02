@@ -15,7 +15,8 @@ caption {
 
 thead,
 tfoot {
-    background-color: rgb(228 240 245);
+    background-color: #000;
+    color: #fff;
 }
 
 thead th {

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bright Abbey">
     <meta name="description"
-        content="Contact White Water Rafting Company for reservations, inquiries, and adventure information.">
+        content="Contact Paddle And Peak Adventures for reservations, inquiries, and adventure information.">
     <title>Contact Us - Paddle And Peak Adventures</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -26,20 +26,24 @@
     </header>
 
     <main>
+        <!-- Company Info -->
         <section class="contact-info">
             <h1>Paddle And Peak Adventures</h1>
-            <p>3310 Mountain Ln<br>Park city, Utah</p>
-            <p><strong>Phone:</strong> +1 345 767 9921</p>
+            <p>3310 Mountain Ln<br>Park City, Utah</p>
+            <p><strong>Phone:</strong> ‪+1 345 767 9921‬</p>
             <p><strong>Email:</strong> info@paddleandpeakadventures.com</p>
         </section>
 
+        <!-- Contact and Map Section -->
         <section class="contact-grid">
+            <!-- Map -->
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d768377.070225845!2d-113.08536529541016!3d41.21146323514898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srafting%20area!5e0!3m2!1sen!2sgh!4v1759652610328!5m2!1sen!2sgh"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
+            <!-- Contact Form -->
             <form class="contact-form">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -49,36 +53,48 @@
 
                 <fieldset>
                     <legend>Message Purpose</legend>
-                    <label><input type="radio" name="purpose" value="general" checked> General
-                        Inquiry</label><br>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation
-                        Question</label><br>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general" checked> General Inquiry
+                    </label><br>
+
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation
+                        Question
+                    </label><br>
+
+                    <label for="purpose-suggestion">
+                        <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website
+                        Suggestion
+                    </label>
                 </fieldset>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Type your message here"></textarea>
 
-                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly
-                    newsletter</label>
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly
+                    newsletter
+                </label>
 
-                <button type="submit">Get in Touch!</button>
+                <button type="submit" id="submit">Get in Touch!</button>
             </form>
         </section>
 
+        <!-- Team Section -->
         <section class="team">
             <h2>We Are Here to Serve You</h2>
             <div class="profiles">
                 <figure>
-                    <img src="images/employer1.jpg" alt="Employee 1">
+                    <img src="images/employer1.jpg" alt="Ben - Lead Rafting Guide">
                     <figcaption>Ben (Lead Rafting Guide)</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employer2.webp" alt="Employee 2">
-                    <figcaption>Steven (Operations Manger)</figcaption>
+                    <img src="images/employer2.webp" alt="Steven - Operations Manager">
+                    <figcaption>Steven (Operations Manager)</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employer3.webp" alt="Employee 3">
+                    <img src="images/employer3.webp" alt="Jason - Customer Service">
                     <figcaption>Jason (Customer Service)</figcaption>
                 </figure>
             </div>

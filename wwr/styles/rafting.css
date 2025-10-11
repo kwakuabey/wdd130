@@ -45,6 +45,7 @@ header {
   align-items: center;
   background-color: var(--primary-color);
   padding: 8px;
+  border-radius: 8px;
 }
 
 header img {
@@ -61,17 +62,20 @@ nav ul {
 
 nav a {
   display: block;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff ;
+  color: #fefefe; 
   text-decoration: none;
-  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ffd166; 
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
+
 
 
 .hero {
@@ -86,21 +90,24 @@ nav a:hover {
 
 .hero h1 {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(38, 70, 83, 0.85); 
+  top: 10%; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; 
+  background-color: rgba(38, 70, 83, 0.8); 
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.5rem; 
   text-align: center;
-  padding: 16px;
-  margin: 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .hero article {
   position: absolute;
   bottom: 20px;
-  left: 100px;
+  left: 150px;
   width: 70%;
   background-color: rgba(255, 255, 255, 0.85);
   padding: 16px;
@@ -123,7 +130,7 @@ section h2 {
   padding: 8px;
   margin-top: 16px;
 }
-
+ 
 .history {
   padding: 1rem;
 }
@@ -177,7 +184,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color);
-  padding: 1rem;
+  padding: 0.1rem;
+  margin-top: 2rem; 
+  border-radius: 8px;
 }
 
 footer p {
@@ -350,4 +359,218 @@ footer .social a img {
   .profiles img {
     width: 120px;
     height:120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #004b63;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0099cc;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 10%;                        
+  left: 50%;                       
+  transform: translate(-50%, -50%); 
+  background-color: rgba(38, 70, 83, 0.85);
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 16px 24px;
+  margin: 0;
+  border-radius: 8px;
+  width: auto;                     
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.grid article {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid article img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.grid h2,
+.trips-table h2,
+.trip-packages h2 {
+  color: #ffffff; 
+  background-color: #055a05; 
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+
+.grid article {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.grid article h2 {
+  background-color : #055a05;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.trips-table {
+  padding: 2rem;
+  text-align: center;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.trips-table th,
+.trips-table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.trips-table th {
+  background-color: #004b63;
+  color: white;
+}
+
+.trips-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+.cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cta .btn {
+  display: inline-block;
+  background-color: #004b63;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #0099cc;
+}
+
+
+
+
+h1, h2, h3, h4 {
+  color: #033a03; 
+  font-weight: 700;
+}
+
+
+body, p, li {
+  color: #1e1e1e; 
+  line-height: 1.6;
+}
+
+
+.btn {
+  background-color: #004b63;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #0077a3;
+}
+
+.trips-table th {
+  background-color: #024c29;
+  color: #ffffff;
+}
+
+
+.trips-table td {
+  color: #000000;
+}
+
+
+footer p {
+  color: #f9f9f9;
+}
+
+a {
+  color: #004b63;
+}
+
+a:hover {
+  color: #0077a3;
 }
